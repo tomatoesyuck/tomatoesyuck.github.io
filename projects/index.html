@@ -22,18 +22,25 @@ title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
 <body>
 
 <div class="noise">
-<h1 id="title1">Some<br>projects!</h1>
+<h1 id="titleproj">Some<br>projects!</h1>
 <br><br><br><br>
 <h1 id="title2"> (software or just <br> anything that's not <br> pure design/art) <br><br><sub> maybe click on a folder for a fun surprise! (՞ . .՞) </sub> </h1>
 <br><br>
-<!-- <br><br>
-<h1 id="title3"> enjoy! ↓  </h1>
-<br><br> -->
+
+{% assign sorted = site.projects | sort: 'index' | reverse %}
+<div class="projectfolderwrapper">
+	{% for project in sorted %}
+        <div class="folder">
+	  <a href="{{ project.url }}"> <img src="/assets/miscimages/projectfolder.svg" alt="myfolderimgbroke" /></a>  
+	<div class="ftitle"> {{ project.title }}</div>
+         </div>
+{% endfor %}
 
 <div class="projectfolderwrapper">
 
       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
+<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
+<div class = "desc">all the other stuff wowee so fun!<br><br>python, c++, golang, swagmoney</div>
 <span class="ftitle"> 01 </span>
        </div>
        <div class="folder">
@@ -57,15 +64,17 @@ title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
 <span class="ftitle"> 01 </span>
        </div>
        <div class="folder">
+<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
+<div class = "desc">breaking the world, one fart at a time<br><br>superswagmaster, html, rust</div>
+<span class="ftitle"> 01 </span>
+       </div>
+       <div class="folder">
+        
 <img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
 <span class="ftitle"> 01 </span>
        </div>
        <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
+<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
 <div class = "desc">all the other stuff wowee so fun!<br><br>python, c++, golang, swagmoney</div>
 <span class="ftitle"> 01 </span>
        </div>

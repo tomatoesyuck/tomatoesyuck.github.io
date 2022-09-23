@@ -123,11 +123,11 @@ li a:hover {
 
 /* -----------PROJECT PAGE---------- */
  /* titles */
- #title1 {
+ #titleproj {
   font-family: 'Baskerville';
   font-weight: normal;
   z-index: 10;
-  margin-left: 9%;
+  margin-left: 8%;
   margin-right: 25px;
   color: #157457;
   letter-spacing: 1px;
@@ -227,20 +227,20 @@ li a:hover {
     vertical-align: top;
     display: inline-block;
     text-align: justify;
-    width: 140px;
+    width: 180px;
     padding: 10px;
     position: relative;
 
 }
 .folder img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     cursor: url(https://64.media.tumblr.com/6722b3c4ffb2b906406df8999aad50af/ef5087adc8713fac-a7/s75x75_c1/64c0d92f3bb3c8d312eafadb32987900b688ad19.png), auto;
 }
 
 .ftitle {
     display: block;
-    max-width: 100px;
+    max-width: 130px;
     word-wrap: break-word;
     text-align: center;
 }
@@ -249,8 +249,10 @@ li a:hover {
   position: absolute;
   max-width: 100px;
   word-wrap: break-word;
-  bottom: 40px;
+  bottom: 60px;
+  left: 25px;
   font-size: 10px;
+  color: #FFFFFF;
 
 }
 
@@ -367,12 +369,12 @@ li a:hover {
 
 
 
-/* -----------HOME PAGE---------- */
+/* -----------HOME/MAIN PAGE---------- */
 
 .logo img {
   display: block; 
   margin-top: 31px;
-  height: 40vw; 
+  height: 35vw; 
   float:left;
   
  } 
