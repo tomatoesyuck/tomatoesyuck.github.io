@@ -130,13 +130,15 @@ li a:hover {
   margin-right: 25px;
   color: #157457;
   letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 75px;
   
 
 }
 
 #titleproj h1 {
-  font-weight: normal;
-  font-size: 75px;
+  
+  
 }
 
 #title1 sub{
