@@ -1,0 +1,8 @@
+name: tomatoesyuck
+markdown: kramdown
+
+collections: 
+  projects:
+    output: true
+  art:
+    output: true
