@@ -125,14 +125,18 @@ li a:hover {
  /* titles */
  #titleproj {
   font-family: 'Baskerville';
-  font-weight: normal;
   z-index: 10;
   margin-left: 8%;
   margin-right: 25px;
   color: #157457;
   letter-spacing: 1px;
-  font-size: 75px;
+  
 
+}
+
+#titleproj h1 {
+  font-weight: normal;
+  font-size: 75px;
 }
 
 #title1 sub{
@@ -251,10 +255,119 @@ li a:hover {
   word-wrap: break-word;
   bottom: 60px;
   left: 25px;
+}
+
+.desc p {
   font-size: 10px;
   color: #FFFFFF;
-
 }
+
+
+
+/* -----------PROJECT GEN PAGE---------- */
+.subheader{
+  text-align: left;
+  margin: 10px;
+  font-family: 'Helvetica', 'Arial';
+  font-size: 12px;
+  
+}
+.subheader a {
+  text-align: left;
+  margin: 15px;
+  padding: .3px;
+  text-decoration: none;
+  color: #C86161; 
+  font-weight: lighter;
+}
+
+.subheader a:hover {
+  color: #C393DA;
+}
+
+/*blog*/
+
+.video {
+  display:block;
+  margin: auto;
+  
+}
+
+.blogpage {
+  font-family: 'Open Sans', 'Helvetica Neue';
+  background-color: #2A2A2A;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  text-align: left;
+  padding: 16px;
+  word-wrap: break-word;
+  color: #FFFFFF;
+}
+
+#blogdate{
+  left:0;
+  top:0;
+  color:#b09a6b;
+  font-size: 14px;
+}
+
+
+
+.blogpage h2{
+  
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: white;
+  
+}
+
+.blogpage p{
+  display:block;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  
+}
+.blogpage small{
+  color: white;
+  padding: 0px;
+}
+
+.blogpage img{
+  width: 35vw;
+  height: auto;
+  
+}
+
+.bloghighlight{
+  background: #b09a6b;
+}
+
+.blogpage li {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+pre {
+    white-space: pre-wrap; 
+}
+pre code {
+  display: block;
+  background-color: #eeeeee;
+  border: 1px solid #999;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+
+
+
 
 /* -----------ART PAGE---------- */
 #title1 {
