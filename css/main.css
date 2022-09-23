@@ -1,0 +1,357 @@
+/* BASICS */
+html{
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+  background-color: #f5f1e1;
+  margin: auto;
+  cursor: url(https://64.media.tumblr.com/6448d6a71c9489a9590019f7b8b77b7b/ef5087adc8713fac-33/s75x75_c1/57686f44a160737317be31fa5c60c2fed9ad5863.png), auto;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+/* NOISE */
+.noise {
+  height: 100vh;
+
+}
+
+.noise:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://64.media.tumblr.com/c57c41aa8eed9f9b43ae7975f0aa7420/fc6cda48d2e4c00e-66/s400x600/4810412ee0b4430db67428d2f5a915f34c10f1c8.jpg);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+/* -----------NAV BAR STUFF---------- */
+.navbar ul {
+ /*  background: #779282; */
+  padding-bottom: 50px;
+  padding-top: 8px;
+
+}
+
+.navbar .homebutton {
+  max-width: 58%;
+  left: 0;
+  word-wrap: break-word;
+}
+
+.navbar .homebutton a{
+  text-align: left;
+}
+
+
+.navbar .homebutton:hover {
+  color: #EE79AD;
+}
+/* .navbar .homebutton:hover:before {
+  content: "←";
+} */
+
+
+nav ul {
+    font-family: 'Arial';
+    list-style: none;
+    letter-spacing: 1.25px;
+    padding-inline-start: 14px;
+    line-height: 1.6;
+    font-size: 13px;
+
+}
+
+
+li a{
+  float: right;
+  display: inline;
+  padding: 16px;
+  text-decoration: none;
+  color:#157457;
+}
+
+li a:hover {
+/*   font-size: 18px;
+  font-style: italic; */
+/*   font-family: "Baskerville";
+  font-size: 14px; */
+  cursor: url(https://64.media.tumblr.com/71c526f1bdb786203d3ad7ea4077d855/99e1620e1859b4f0-2a/s75x75_c1/45e0c1757b668126998db8b26b7eaa99f7f92214.pnj), auto;
+}
+
+.restofbar li a:hover:before {
+  content:"(";
+}
+
+
+.restofbar li a:hover:after {
+  content:")";
+}
+
+
+
+/* -----------PROJECT PAGE---------- */
+ /* titles */
+ #title1 {
+  font-family: 'Baskerville';
+  font-weight: normal;
+  z-index: 10;
+  margin-left: 9%;
+  margin-right: 25px;
+  color: #157457;
+  letter-spacing: 1px;
+  font-size: 75px;
+
+}
+
+#title1 sub{
+  font-size: 10px;
+}
+
+#title2{
+  font-family: 'Baskerville';
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  z-index: 10;
+  text-align: right;
+  margin-right: 9%;
+  margin-left: 25px;
+  color: #157457;
+
+}
+#title2 h1 {
+  margin-right: 200px;
+}
+
+#title2 sub{
+  font-size: 10px;
+  margin-right: 30px;
+}
+
+#title3{
+  margin-top: 100px;
+  letter-spacing: 1px;
+  z-index: 10;
+  text-align: left;
+  margin-right: 25px;
+  margin-left: 25px;
+  color: #157457;
+
+}
+
+#title4{
+  letter-spacing: 1px;
+  z-index: 10;
+  text-align: center;
+  color: #ece8da;
+  font-size: 10px;
+
+}
+
+/* folder grid */
+.wrapper {
+  margin: auto;
+  z-index: -2;
+  background: #6B717E;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sqphotogrid, .sqphotogrid li {
+  text-align: center;
+	list-style: none;
+	padding: 0;
+
+}
+
+.sqphotogrid li {
+	display: inline-block;
+	width: 23%;
+
+}
+
+.sqphotogrid li img {
+	width: 100%;
+
+}
+ .indimg img{
+   filter: grayscale(0%);
+  transition: .3s ease;
+ }
+
+.indimg:hover img{
+  /*opacity: 0.5;*/
+  /*filter: grayscale(0%);*/
+  transform: scale(.85);
+}
+
+/* FOLDER CONTAINER + INDIVIDUAL FOLDERS */
+.projectfolderwrapper {
+  margin-left: 80px;
+
+}
+
+.folder {
+    vertical-align: top;
+    display: inline-block;
+    text-align: justify;
+    width: 140px;
+    padding: 10px;
+    position: relative;
+
+}
+.folder img {
+    width: 100px;
+    height: 100px;
+    cursor: url(https://64.media.tumblr.com/6722b3c4ffb2b906406df8999aad50af/ef5087adc8713fac-a7/s75x75_c1/64c0d92f3bb3c8d312eafadb32987900b688ad19.png), auto;
+}
+
+.ftitle {
+    display: block;
+    max-width: 100px;
+    word-wrap: break-word;
+    text-align: center;
+}
+.desc {
+  font-family: 'Arial';
+  position: absolute;
+  max-width: 100px;
+  word-wrap: break-word;
+  bottom: 40px;
+  font-size: 10px;
+
+}
+
+/* -----------ART PAGE---------- */
+#title1 {
+  font-family: "Baskerville";
+  font-size: 75px;
+  font-weight: normal;
+  text-align: left;
+  z-index: 10;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #157457;
+  letter-spacing: 1px;
+
+}
+
+/* img grid */
+.wrapper {
+  margin: 12px;
+  z-index: -2;
+/*   background: #157457; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.sqphotogrid, .sqphotogrid li {
+  text-align: center;
+	list-style: none;
+	padding: 0;
+
+}
+
+.sqphotogrid li {
+	display: inline-block;
+	width: 23%;
+
+}
+
+.sqphotogrid li img {
+	width: 100%;
+
+}
+ .indimg img{
+   filter: grayscale(0%);
+  transition: .3s ease;
+ }
+
+.indimg:hover img{
+  /*opacity: 0.5;*/
+  /*filter: grayscale(0%);*/
+  transform: scale(.85);
+}
+
+
+/* -----------ABOUT PAGE---------- */
+
+
+.typewriterText {
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+
+}
+#typerwriter {
+  margin: auto;
+  width: 50%;
+}
+
+.profile {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.profile h2 {
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.profile h3 {
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.profile small {
+  font-size: 10px;
+}
+
+.profilepic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 23%;
+
+}
+
+.bio {
+  margin: 0 auto;
+  max-width: 400px;
+  word-wrap: break-word;
+  text-align: left;
+  padding-bottom: 30px;
+}
