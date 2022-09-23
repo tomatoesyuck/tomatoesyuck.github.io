@@ -52,15 +52,16 @@ body, html{
 }
 
 /* -----------NAV BAR STUFF---------- */
+
 .navbar ul {
  /*  background: #779282; */
   padding-bottom: 50px;
   padding-top: 8px;
-
+  
 }
 
 .navbar .homebutton {
-  max-width: 58%;
+  max-width: 58%; 
   left: 0;
   word-wrap: break-word;
 }
@@ -85,7 +86,7 @@ nav ul {
     padding-inline-start: 14px;
     line-height: 1.6;
     font-size: 13px;
-
+    
 }
 
 
@@ -113,6 +114,9 @@ li a:hover {
 .restofbar li a:hover:after {
   content:")";
 }
+
+
+
 
 
 
@@ -354,4 +358,85 @@ li a:hover {
   word-wrap: break-word;
   text-align: left;
   padding-bottom: 30px;
+}
+
+
+
+/* -----------HOME PAGE---------- */
+
+.logo img {
+  display: block; 
+  margin-top: 31px;
+  height: 40vw; 
+  float:left;
+  
+ } 
+ 
+
+.txt {
+  font-family:"Baskerville";
+  font-weight: lighter;
+  font-size: 60px;
+}
+.txt h1 {
+  font-weight: normal;
+  font-size: 60px;
+
+}
+.txt h1 span{
+  font-weight: normal;
+  font-family: "Arial";
+  font-size: 10px;
+  padding-bottom: 10px;
+  float:right;
+  padding-right: 40px;
+}
+
+.txt a {
+  color: #157457;
+  text-decoration: none;
+  
+}
+.txt a:hover {
+  font-style: italic; 
+  color: #EE79AD;
+  -webkit-transform: scale(1.4); 
+}
+
+
+.welcome #buttonArt {
+  text-align: right;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-right: 40%;
+
+}
+
+#buttonArt a {
+  display: block;
+  text-decoration: none;
+  color: #157457;
+  
+}
+#buttonArt a:hover {
+  font-style: italic; 
+  color: #EE79AD;
+  -webkit-transform: scale(1.4); 
+}
+
+#buttonProject {
+  position: relative;
+  margin-left: 60px;
+  margin-right: 40%;
+}
+
+#buttonProject a {
+  font-family: "Baskerville";
+  text-decoration: none;
+  color: #157457;
+}
+
+#buttonProject a:hover {
+  color: #EE79AD;
+  font-family: 'Courier';
 }
