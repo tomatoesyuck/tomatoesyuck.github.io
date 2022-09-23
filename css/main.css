@@ -186,43 +186,6 @@ li a:hover {
 
 }
 
-/* folder grid */
-.wrapper {
-  margin: auto;
-  z-index: -2;
-  background: #6B717E;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.sqphotogrid, .sqphotogrid li {
-  text-align: center;
-	list-style: none;
-	padding: 0;
-
-}
-
-.sqphotogrid li {
-	display: inline-block;
-	width: 23%;
-
-}
-
-.sqphotogrid li img {
-	width: 100%;
-
-}
- .indimg img{
-   filter: grayscale(0%);
-  transition: .3s ease;
- }
-
-.indimg:hover img{
-  /*opacity: 0.5;*/
-  /*filter: grayscale(0%);*/
-  transform: scale(.85);
-}
-
 /* FOLDER CONTAINER + INDIVIDUAL FOLDERS */
 .projectfolderwrapper {
   margin-left: 80px;
@@ -257,6 +220,8 @@ li a:hover {
   word-wrap: break-word;
   bottom: 60px;
   left: 25px;
+  font-size: 10px;
+  color: #FFFFFF;
 }
 
 .desc p {
