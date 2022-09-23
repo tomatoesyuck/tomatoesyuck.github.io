@@ -20,23 +20,25 @@ title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
 </div>
 
 <body>
-
 <div class="noise">
 <h1 id="titleproj">Some<br>projects!</h1>
 <br><br><br><br>
 <h1 id="title2"> (software or just <br> anything that's not <br> pure design/art) <br><br><sub> maybe click on a folder for a fun surprise! (՞ . .՞) </sub> </h1>
 <br><br>
 
+
 {% assign sorted = site.projects | sort: 'index' | reverse %}
 <div class="projectfolderwrapper">
 	{% for project in sorted %}
-        <div class="folder">
-	  <a href="{{ project.url }}"> <img src="/assets/miscimages/projectfolder.svg" alt="myfolderimgbroke" /></a>  
+         <div class="folder">
+	  <a href="{{ project.url }}"> <img src="/assets/icons/projectfoldericon.svg" alt="myfolderimgbroke" /></a>  
+      <div class = "desc">{{project.desc}}</div>
+      <br><br>
+      <div class = "desc">{{project.lang}}</div>
 	<div class="ftitle"> {{ project.title }}</div>
-         </div>
+          </div>
 {% endfor %}
-
-<div class="projectfolderwrapper">
+<!-- end here -->
 
       <div class="folder">
 <img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
