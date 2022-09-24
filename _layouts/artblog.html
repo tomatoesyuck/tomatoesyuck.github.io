@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="subheader"><h1><a href="/art" >  ⇦ </a></h1></div>
+
+<div class="artpage">
+    <h3>{{page.title}}</h3>
+    <h2>{{page.subtitle}}</h2>
+      
+    <div class="genpagephoto">
+    {% for illustration in page.images %}
+        <img src="{{ illustration.image_path }}" alt="illustration" />
+    {% endfor %}
+      </div>
+    
+    <p> {{content}} </p>
+    
+    </div>
+

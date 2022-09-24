@@ -412,6 +412,67 @@ code {
   transform: scale(.85);
 }
 
+/*page for art gen output pages*/
+.artpage{
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.artpage h3{
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+.artpage h2{
+  font-size: 17px;
+  font-weight: lighter; 
+  margin: -20px;
+  margin-bottom: 20px;
+}
+
+.artpage p{
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.artpage img{
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.genpagephoto{
+  margin-left:25px;
+  margin-right:25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.genpagephoto img{
+  max-width: 65%;
+  height: auto;
+}
+
+
+.photographcollage {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;	
+}
+
+
+.photographcollage img{
+  max-width: 100%;
+  height: auto !important;
+}
+
+
 
 /* -----------ABOUT PAGE---------- */
 

@@ -34,7 +34,7 @@ When I began programming, I was, as expected, lost. But after learning some basi
 
 
 
-![morenotes](/assets/miscimages/studdyimg/studdycr1.jpg){:class = "blogpage"}
+![morenotes](/assets/projectblogassets/studdyassets/studdycr1.jpg){:class = "blogpage"}
 
 <small>Let’s take a moment to appreciate my culture and religions notes. </small>
 
@@ -47,13 +47,13 @@ Okay, enough rambling. Let’s actually get onto the thing I made because that�
 <h2>demonstration of the thing i made!</h2>
 
 
-![appopen](/assets/miscimages/studdyimg/studdy1.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy1.gif){:class = "blogpage"}
 
 here’s what you see when the app opens.
 
 
 
-![appopen](/assets/miscimages/studdyimg/studdy2.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy2.gif){:class = "blogpage"}
 
 plants.
 
@@ -61,13 +61,13 @@ plants.
 
 
 
-![appopen](/assets/miscimages/studdyimg/studdy3.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy3.gif){:class = "blogpage"}
 
 buy stuff because you already had coins there from a year ago.
 
 
 
-![appopen](/assets/miscimages/studdyimg/studdy4.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy4.gif){:class = "blogpage"}
 
 tap on alarm clock to track how long you studied for. 
 
@@ -76,13 +76,13 @@ tap on alarm clock to track how long you studied for.
 
 
 
-![appopen](/assets/miscimages/studdyimg/studdy5.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy5.gif){:class = "blogpage"}
 
 profit.
 
 
 
-![appopen](/assets/miscimages/studdyimg/studdy6.gif){:class = "blogpage"}
+![appopen](/assets/projectblogassets/studdyassets/studdy6.gif){:class = "blogpage"}
 
 plants won't be lost to the void!
 
