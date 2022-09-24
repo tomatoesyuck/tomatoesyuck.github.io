@@ -2,20 +2,18 @@
 layout: default
 ---
 
-<div class="subheader"><h1><a href="/" >  ← tomatoesyuck/projects</a></h1></div>
+<div class="subheader"><h1><a href="/projects" >  ⇦ </a></h1></div>
 
 <body>
 <div class = "blogpage">
 
 <div id="blogdate"> {{ page.smallnote }} </div>
 
-<h2>{{page.title}}</h2>
-  
-<div class="projdesc"><small>{{page.desc}}</small></div>
-<br>
-<div class="projlang"><small>{{page.lang}}</small></div>
+<h2>{{page.title}} {{page.titleaddon}}</h2>
   
     {{content}} 
-
+    <div class="projdesc"><small>tldr: {{page.desc}} </small></div>
+    <br>
+    <div class="projlang"><small>languages used: {{page.lang}}</small></div>
 </div>
 </body>

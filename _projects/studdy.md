@@ -1,13 +1,13 @@
 ---
 layout: projectpgblog
 title: studdy
+titleaddon: the app that i made in 2 weeks, just because
 smallnote: aug 2020 
 desc: study timer app with a buddy
 lang: swift
 index: 0
 ---
 
-<h2>the app that i made in 2 weeks, just because</h2>
 
 So I made an app in two weeks during October of 2019 because I found a random competition and I was bored. Armed with knowledge from two whole elective computer science classes, I decided why not. 
 

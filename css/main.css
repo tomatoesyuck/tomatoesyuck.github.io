@@ -62,8 +62,8 @@ body, html{
 }
 
 .navbar .homebutton {
-  max-width: 58%; 
   left: 0;
+  float: left;
   word-wrap: break-word;
 }
 
@@ -74,6 +74,10 @@ body, html{
 
 .navbar .homebutton:hover {
   color: #EE79AD;
+  content: "← /HOME";
+}
+.navbar .homebutton:hover {
+  
 }
 /* .navbar .homebutton:hover:before {
   content: "←";
@@ -218,7 +222,7 @@ li a:hover {
   position: absolute;
   max-width: 100px;
   word-wrap: break-word;
-  bottom: 60px;
+  bottom: 95px;
   left: 25px;
   font-size: 10px;
   color: #FFFFFF;
@@ -229,6 +233,22 @@ li a:hover {
   color: #FFFFFF;
 }
 
+.lang {
+  font-family: 'Arial';
+  position: absolute;
+  max-width: 80px;
+  word-wrap: break-word;
+  bottom: 70px;
+  left: 25px;
+  font-size: 10px;
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+.lang p {
+  font-size: 10px;
+  color: #FFFFFF;
+}
 
 
 /* -----------PROJECT GEN PAGE---------- */
@@ -244,12 +264,12 @@ li a:hover {
   margin: 15px;
   padding: .3px;
   text-decoration: none;
-  color: #C86161; 
+  color: #157457; 
   font-weight: lighter;
 }
 
 .subheader a:hover {
-  color: #C393DA;
+  color: #e99ce1;
 }
 
 /*blog*/
@@ -325,10 +345,14 @@ pre {
 }
 pre code {
   display: block;
-  background-color: #eeeeee;
+  background-color: #d6d3d3;
   border: 1px solid #999;
   padding: 15px;
   border-radius: 5px;
+}
+
+code {
+  color: black;
 }
 
 
