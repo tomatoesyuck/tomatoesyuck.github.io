@@ -33,7 +33,8 @@ var textArray = [
 "Andrea forgot which way her knee was supposed to go, twice",
 "Andrea doodles a lot on her notes",
 "Andrea is always learning something new",
-"Andrea develops silly apps"
+"Andrea develops silly apps",
+"Andrea loves teddy bears"
 ];
 
 

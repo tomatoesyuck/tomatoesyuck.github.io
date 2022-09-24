@@ -11,7 +11,7 @@ body {
   background-color: #f5f1e1;
   margin: auto;
   color:#157457;
-  cursor: url(https://64.media.tumblr.com/6448d6a71c9489a9590019f7b8b77b7b/ef5087adc8713fac-33/s75x75_c1/57686f44a160737317be31fa5c60c2fed9ad5863.png), auto;
+  cursor: url(/assets/icons/kirbs.assets/icons/kirbs.svg), auto;
 }
 
 body, html{
@@ -108,7 +108,7 @@ li a:hover {
   font-style: italic; */
 /*   font-family: "Baskerville";
   font-size: 14px; */
-  cursor: url(https://64.media.tumblr.com/71c526f1bdb786203d3ad7ea4077d855/99e1620e1859b4f0-2a/s75x75_c1/45e0c1757b668126998db8b26b7eaa99f7f92214.pnj), auto;
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
 
 .restofbar li a:hover:before {
@@ -208,7 +208,7 @@ li a:hover {
 .folder img {
     width: 130px;
     height: 130px;
-    cursor: url(https://64.media.tumblr.com/6722b3c4ffb2b906406df8999aad50af/ef5087adc8713fac-a7/s75x75_c1/64c0d92f3bb3c8d312eafadb32987900b688ad19.png), auto;
+    cursor: url(/assets/icons/kirbs.svg), auto;
 }
 
 .ftitle {
@@ -270,6 +270,7 @@ li a:hover {
 
 .subheader a:hover {
   color: #e99ce1;
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
 
 /*blog*/
@@ -410,6 +411,7 @@ code {
   /*opacity: 0.5;*/
   /*filter: grayscale(0%);*/
   transform: scale(.85);
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
 
 /*page for art gen output pages*/
@@ -519,7 +521,7 @@ code {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  width: 23%;
+  width: 26%;
 
 }
 
@@ -535,25 +537,34 @@ code {
 
 
 /* -----------HOME/MAIN PAGE---------- */
-
+.welcome {
+  margin: 10px;
+}
 .logo img {
   display: block; 
   margin-top: 31px;
   height: 35vw; 
   float:left;
+  margin-right: 20px;
   
  } 
  
+ .welcome h1 {
+  font-weight: lighter;
+  font-size: 24px;
+ }
 
 .txt {
   font-family:"Baskerville";
   font-weight: lighter;
   font-size: 60px;
+  margin-top: 90px;
 }
 .txt h1 {
   font-weight: normal;
   font-size: 60px;
   color: #157457;
+  padding-left: 20px;
 
 }
 .txt h1 span{
@@ -561,7 +572,7 @@ code {
   font-family: "Arial";
   font-size: 10px;
   padding-bottom: 10px;
-  float:right;
+  float:left;
   padding-right: 40px;
 }
 
@@ -574,6 +585,7 @@ code {
   font-style: italic; 
   color: #EE79AD;
   -webkit-transform: scale(1.4); 
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
 
 
@@ -595,6 +607,7 @@ code {
   font-style: italic; 
   color: #EE79AD;
   -webkit-transform: scale(1.4); 
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
 
 #buttonProject {
@@ -612,4 +625,5 @@ code {
 #buttonProject a:hover {
   color: #EE79AD;
   font-family: 'Courier';
+  cursor: url(assets/icons/kirbsclick.svg), auto;
 }
