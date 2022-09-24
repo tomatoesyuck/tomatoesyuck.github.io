@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>studdy</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+<!-- 			<link rel="shortcut icon" href="/assets/miscimages/favicon.svg"> -->
+		</head>
+		<body>
+			<div class="container">
+			
+			<div class="subheader"><h1><a href="/" >  ← tomatoesyuck/projects</a></h1></div>
+
+<body>
+<div class = "blogpage">
+
+<div id="blogdate"> aug 2020 </div>
+
+<h2>studdy</h2>
+  
+<div class="projdesc"><small>study timer app with a buddy</small></div>
+<br>
+<div class="projlang"><small>swift</small></div>
+  
+    <h2>the app that i made in 2 weeks, just because</h2>
+
+<p>So I made an app in two weeks during October of 2019 because I found a random competition and I was bored. Armed with knowledge from two whole elective computer science classes, I decided why not.</p>
+
+<p>One might think I only had two weeks because I procrastinated—well, you usually wouldn’t be wrong but you are.</p>
+
+<p>I found this competition during my vacation on the opposite side of the country, so I could only begin when school was starting because that’s when I was going to be back at home.</p>
+
+<p>However, when school started, work and studying unsurprisingly followed. While adjusting to the new year, I kept trying to think of ideas any time I wasn’t trying to shove kinematics concepts and rhetorical analysis into my brain. Unfortunately, any semblance of creativity perished after the first month of my junior year.</p>
+
+<p>That’s how an app idea related to school came to fruition…</p>
+
+<p>I figured that maintaining focus was difficult for me so I wanted (more accurately, needed) to keep myself accountable. Hence, studdy, the mashup of the words “study” and “buddy,” became a thing because what’s better than instant gratification!</p>
+
+<p>So that was the whole idea.</p>
+
+<p>When I began programming, I was, as expected, lost. But after learning some basic syntax, I just sought out to fulfill my plans, which is a generous term because it was just a messy amalgamation of thoughts from lunch, study hall, and scribbles on my world history notes.</p>
+
+<p><img src="/assets/miscimages/studdyimg/studdycr1.jpg" alt="morenotes" /></p>
+
+<p><small>Let’s take a moment to appreciate my culture and religions notes. </small></p>
+
+<p>Okay, enough rambling. Let’s actually get onto the thing I made because that’s why you’re here! <small>(probably?)</small></p>
+
+<h2>demonstration of the thing i made!</h2>
+
+<p><img src="/assets/miscimages/studdyimg/studdy1.gif" alt="appopen" /></p>
+
+<p>here’s what you see when the app opens.</p>
+
+<p><img src="/assets/miscimages/studdyimg/studdy2.gif" alt="appopen" /></p>
+
+<p>plants.</p>
+
+<p><small> the font was custom made by yours truly. glad my handwriting became useful for once. </small></p>
+
+<p><img src="/assets/miscimages/studdyimg/studdy3.gif" alt="appopen" /></p>
+
+<p>buy stuff because you already had coins there from a year ago.</p>
+
+<p><img src="/assets/miscimages/studdyimg/studdy4.gif" alt="appopen" /></p>
+
+<p>tap on alarm clock to track how long you studied for.</p>
+
+<p><small>try to ignore the fact that i can’t draw any poses!!!</small></p>
+
+<p><img src="/assets/miscimages/studdyimg/studdy5.gif" alt="appopen" /></p>
+
+<p>profit.</p>
+
+<p><img src="/assets/miscimages/studdyimg/studdy6.gif" alt="appopen" /></p>
+
+<p>plants won’t be lost to the void!</p>
+
+<h2>actual process that went into making this thing work, sort of</h2>
+
+<p>Originally, I thought this idea was simple enought because…well, I mean, it’s just a timer, some math, and wow, now you have app!</p>
+
+<h2>haha.</h2>
+<p><small>xcode yelled at me a lot</small></p>
+
+<p>Honestly, I can’t really explain the actual process and the obstacles I encountered while making this because I don’t remember it, so I guess I’ll explain some of the code that’s behind this app!</p>
+
+<p><small>It’s currently 2 AM when I’m writing this so please excuse any poor explanations.</small></p>
+
+<ul>
+  <li>Every time the timer updates, the variable that stores time accumulates. Then, I just did some <del>second grade</del> math which uses that time variable to convert the time studied into coins based on a set ratio (e.g. for every 10 minutes, you earn 5 of coins).</li>
+  <li>When the user buys an item, it’s appended to a global objects array. This array, and the variable that contains the amount of coins the user possesses, is stored in UserDefaults. Because these values doesn’t require much data, UserDefaults is suitable to make sure the data is persistent when the app is killed. Don’t want innocent plants to get lost in some abyss.</li>
+</ul>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">defaults</span> <span class="o">=</span> <span class="kt">UserDefaults</span><span class="o">.</span><span class="n">standard</span>
+
+<span class="k">let</span> <span class="nv">currentCoinAmt</span> <span class="o">=</span> <span class="n">defaults</span><span class="o">.</span><span class="nf">integer</span><span class="p">(</span><span class="nv">forKey</span><span class="p">:</span> <span class="s">"totalCoins"</span><span class="p">)</span> <span class="p">??</span> <span class="mi">0</span>
+<span class="n">coinAmt</span> <span class="o">=</span> <span class="n">currentCoinAmt</span>
+
+<span class="k">let</span> <span class="nv">currentInv</span> <span class="o">=</span> <span class="n">defaults</span><span class="o">.</span><span class="nf">array</span><span class="p">(</span><span class="nv">forKey</span><span class="p">:</span> <span class="s">"userInv"</span><span class="p">)</span>
+    
+<span class="k">if</span> <span class="n">currentInv</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+    <span class="n">boughtItems</span> <span class="o">=</span> <span class="n">currentInv</span> <span class="k">as!</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>When the app is launched again, it sets the user’s inventory equal to what’s stored in UserDefaults. It initializes only the plants that were appended to the objects array (when they’re bought) because, well, that’s all that should be available to the user.</li>
+</ul>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">plantName</span> <span class="k">in</span> <span class="n">boughtItems</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">item</span><span class="p">:</span> <span class="n">plantObject</span><span class="p">?</span> <span class="o">=</span> <span class="n">plantDict</span><span class="p">[</span><span class="n">plantName</span><span class="p">]</span>
+    <span class="k">let</span> <span class="nv">plant</span> <span class="o">=</span> <span class="nf">showingBoughtPlants</span><span class="p">(</span><span class="nv">imgname</span><span class="p">:</span> <span class="n">item</span><span class="p">?</span><span class="o">.</span><span class="n">plantImgName</span> <span class="p">??</span> <span class="s">""</span><span class="p">,</span> <span class="nv">posx</span><span class="p">:</span> <span class="n">item</span><span class="p">?</span><span class="o">.</span><span class="n">plantPosX</span> <span class="p">??</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">posy</span><span class="p">:</span> <span class="n">item</span><span class="p">?</span><span class="o">.</span><span class="n">plantPosY</span> <span class="p">??</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">scale</span><span class="p">:</span> <span class="n">item</span><span class="p">?</span><span class="o">.</span><span class="n">plantScale</span> <span class="p">??</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">zpos</span><span class="p">:</span> <span class="n">item</span><span class="p">?</span><span class="o">.</span><span class="n">plantZPos</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="nf">addChild</span><span class="p">(</span><span class="n">plant</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>If I recall correctly, registering touches <del>gave me a massive headache</del> posed some difficulties. It’s a function so the UI reacts to perform what it’s supposed to. Like when a button (it’s actually an image) contains a touch from the user, it does stuff.</li>
+</ul>
+
+<p><br /></p>
+<h2>concluding thoughts</h2>
+
+<p>What would I have improved? Pretty much everything. 
+<small>Besides my little plants (I love my plants alright). And probably most of the shop menu graphics (kind of proud of that too). </small></p>
+
+<p><del>I could sit here and just completely obliterate my app, but let’s not do that.</del></p>
+<ul>
+  <li>The art, even though that’s the <strong>least</strong> of concerns</li>
+  <li>Bugs like how the timer becomes confused after it surpasses an hour</li>
+  <li>Adding inventory functionality where you can store plants (I originally had this but I couldn’t get it to work properly)</li>
+  <li>Adding the ability for users to modify the location of the plants</li>
+  <li>I also wanted relaxing music (lofi hip-hop) to play while the studying session was running, but then I realized I don’t know music…also <del>it was really not a necessity anyways</del> I ran out of time</li>
+  <li><strong>And most of all:</strong> code structure, organization, and efficiency. So basically, the whole entire app! The code’s pretty crude…but hey, that’s part of <span style="color: yellow"> <em>learning</em></span>, am I right? *nervous chuckle*</li>
+</ul>
+
+<p>Anyhow, even though I can’t say that I’m exceptionally proud of this project, I’m still pleased that I was able to make something completely from scratch. It gave me an oppurtunity to apply programming concepts I’ve learned in and outside of class, and I got an actual feel for Swift that wasn’t mindlessly staring at tutorials. That’s about it. I hope you enjoyed reading!</p>
+ 
+
+</div>
+</body>
+			
+			</div><!-- /.container -->
+	
+		</body>
+	</html>
