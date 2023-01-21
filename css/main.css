@@ -11,7 +11,7 @@ body {
   background-color: #f5f1e1;
   margin: auto;
   color:#157457;
-  cursor: url(/assets/icons/kirbs.assets/icons/kirbs.svg), auto;
+  cursor: url(/assets/icons/kirbs.svg), auto;
 }
 
 body, html{
@@ -104,21 +104,21 @@ li a{
 }
 
 li a:hover {
-/*   font-size: 18px;
-  font-style: italic; */
+  /* font-size: 18px; */
+  font-style: italic;
 /*   font-family: "Baskerville";
   font-size: 14px; */
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
 
-.restofbar li a:hover:before {
+/* .restofbar li a:hover:before {
   content:"(";
 }
 
 
 .restofbar li a:hover:after {
   content:")";
-}
+} */
 
 
 
@@ -263,6 +263,7 @@ li a:hover {
 
 
 /* -----------PROJECT GEN PAGE---------- */
+
 .subheader{
   text-align: left;
   margin: 10px;
@@ -281,7 +282,7 @@ li a:hover {
 
 .subheader a:hover {
   color: #e99ce1;
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
 
 /*blog*/
@@ -313,7 +314,12 @@ li a:hover {
   font-size: 14px;
 }
 
-
+.blogpage h3 {
+  font-size: 1.0rem;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: white;
+}
 
 .blogpage h2{
   
@@ -432,7 +438,7 @@ code {
   /*opacity: 0.5;*/
   /*filter: grayscale(0%);*/
   transform: scale(.85);
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
 
 /*page for art gen output pages*/
@@ -621,7 +627,7 @@ code {
   font-style: italic; 
   color: #EE79AD;
   -webkit-transform: scale(1.4); 
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
 
 
@@ -643,7 +649,7 @@ code {
   font-style: italic; 
   color: #EE79AD;
   -webkit-transform: scale(1.4); 
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
 
 #buttonProject {
@@ -661,5 +667,29 @@ code {
 #buttonProject a:hover {
   color: #EE79AD;
   font-family: 'Courier';
-  cursor: url(assets/icons/kirbsclick.svg), auto;
+  cursor: url(/assets/icons/kirbsclick.svg), auto;
 }
+
+/* code below from https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
+
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+}
+ 
+.hmove { display: flex; }
+
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+ 
+
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 50s infinite; }
+.hmove:hover { animation-play-state: paused; }
