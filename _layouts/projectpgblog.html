@@ -9,11 +9,13 @@ layout: default
 
 <div id="blogdate"> {{ page.smallnote }} </div>
 
-<h2>{{page.title}} {{page.titleaddon}}</h2>
+<h2>{{page.title}} </h2>
+<h3>{{page.titleaddon}}</h3>
+<div class="projlang"><small><span style="font-style: italic;">languages used:</span>  {{page.lang}}</small></div> 
+<div class="projdesc"><span style="font-style: italic;"><small>tldr:</span> {{page.desc}} </small></div>
+<br>
+
   
     {{content}} 
-    <div class="projdesc"><small>tldr: {{page.desc}} </small></div>
-    <br>
-    <div class="projlang"><small>languages used: {{page.lang}}</small></div>
 </div>
 </body>
