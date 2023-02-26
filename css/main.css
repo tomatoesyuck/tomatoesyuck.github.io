@@ -507,8 +507,10 @@ code {
 
 
 .typewriterText {
+  display: flex;
   font-size: 34px;
   font-weight: normal;
+  justify-content: center;
   text-align: center;
   color:#157457;
 
