@@ -504,10 +504,13 @@ code {
 
 
 /* -----------ABOUT PAGE---------- */
+.typewriter_wrapper {
+  display: flex;
+  justify-content: center;
 
+}
 
 .typewriterText {
-  display: flex;
   font-size: 34px;
   font-weight: normal;
   justify-content: center;
