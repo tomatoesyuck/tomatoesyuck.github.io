@@ -1,6 +1,7 @@
 /* BASICS */
 html{
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -8,17 +9,106 @@ html{
 }
 
 body {
-  background-color: #f5f1e1;
+  background-color: #CFCFCF;
+  font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  color:#157457;
+  color:black;
   cursor: url(/assets/icons/kirbs.svg), auto;
 }
 
-body, html{
-  width: 100%;
-  height: 100%;
+.topBar {
+  display: flex;
+  flex-direction: column;
 }
 
+.nameBar {
+  display: flex;
+  width: 100%; 
+  height: 35px; 
+  align-items: center;
+  background: linear-gradient(180deg, #D4DBEE 0%, #A6B1DD 100%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #cfcfcf68;
+}
+
+.navbarTopRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.navbarButtons {
+  flex: 1;
+  border: 1px #A7A7A7 solid;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+
+}
+
+.navbarTopRow .navbarButtons:hover{
+  background-color: #7070704d;
+}
+
+.navbarBottomRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbarBottomRow .navbarButtons {
+  border-bottom-width: 2px;
+}
+
+.welcomeCont {
+  font-family: 'DotGothic16';
+}
+
+.myname {
+  font-size: 50px;
+  
+
+  width: 100%; 
+  margin-left: 20px; 
+  color:#606EEF; 
+  letter-spacing:.1cm;
+  text-decoration: wavy;
+}
+
+.myname a {
+  
+}
+
+.myname:hover {
+  
+}
+
+.welcomeGrid {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.welcomeGridElem {
+  width: 100%;
+}
+
+.welcomeGridElem img {
+  width: 100%;
+}
 /* NOISE */
 .noise {
   height: 100vh;
@@ -31,7 +121,7 @@ body, html{
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.05;
+  opacity: 0.08;
   position: fixed;
   top: -110%;
   width: 300%;
@@ -52,10 +142,64 @@ body, html{
   90% { transform:translate(-10%, 10%) }
 }
 
+
+.divider {
+  border-bottom: 2px solid #A8A8A8;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* style.css */
+#category-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#category-buttons button.active {
+  position: relative;
+  background-color: #acabab;
+  text-align: left;
+}
+
+#category-buttons button.active::after {
+  content: "x";
+  position: absolute;
+  right: 0;
+  padding: 0.1px 6px;
+}
+
+.buttonTab {
+  display: inline-block;
+  background-color: #CFCFCF;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonTab {
+    width: 100%; 
+  }
+}
+
+.buttonTab:hover {
+  background-color: #C6C6C6;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
 /* -----------NAV BAR STUFF---------- */
 
-.navbar ul {
- /*  background: #779282; */
+/* .navbar ul {
   padding-bottom: 50px;
   padding-top: 8px;
   
@@ -78,7 +222,7 @@ body, html{
 }
 .navbar .homebutton:hover {
   
-}
+} */
 /* .navbar .homebutton:hover:before {
   content: "←";
 } */
@@ -193,13 +337,13 @@ li a:hover {
 /* FOLDER CONTAINER + INDIVIDUAL FOLDERS */
 .projectfolderwrapper {
   margin-left: 80px;
-
 }
 
 .folder {
     vertical-align: top;
     display: inline-block;
     text-align: justify;
+    justify-content: center;
     width: 180px;
     padding: 10px;
     position: relative;
@@ -222,11 +366,11 @@ li a:hover {
   display: block;
   max-width: 130px;
   word-wrap: break-word;
+  font-size: 20px;
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
 }
-
 
 .desc {
   font-family: 'Arial';
@@ -515,12 +659,57 @@ code {
   font-weight: normal;
   justify-content: center;
   text-align: center;
-  color:#157457;
+  color:#7D7D7D;
 
 }
 #typerwriter {
   margin: auto;
   width: 50%;
+}
+
+.profileBackground {
+  background-color: #EBEBEB; /* Gray color */
+  border-radius: 10px; 
+  width: 80%;  
+  height: auto; 
+  margin: 0 auto; 
+  margin-top: 45px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.profileLeft {
+  flex: 1;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.profileRight {
+  /* display: flex; */
+  flex: 1;
+  flex-direction: column;
+  /* margin-right: 40px; */
+  /* margin-left: 25px; */
+  /* margin-bottom: 50px; */
+
+}
+
+.profileLeftTXT {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileLeftTXT p {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .profile {
@@ -530,7 +719,7 @@ code {
 
 .profile h2 {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 17px;
   text-align: center;
   padding: 10px;
   color:#157457;
@@ -571,15 +760,17 @@ code {
 
 
 /* -----------HOME/MAIN PAGE---------- */
-.andreaclass {
-  color: #157457;
-  /* text-decoration: none; */
+.myname {
+  color:#606EEF; 
+  text-decoration: none;
+  font-size: 90px;
+  margin-left: 100px;
 }
-.andreaclass:hover {
+.myname:hover {
   text-decoration: none;
   color: #EE79AD;
 }
-.andreaclass:hover:after {
+.myname:hover:after {
   content: ", who's that?";
 }
 .welcome {
@@ -687,8 +878,11 @@ code {
   flex-shrink: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 10px;
   text-align: center;
+  color: #7D7D7D;
+  font-size: 20px;
 }
  
 
@@ -696,5 +890,5 @@ code {
   0% { transform: translate3d(100%, 0, 0); }
   100% { transform: translate3d(-400%, 0, 0); }
 }
-.hmove { animation: tickerh linear 50s infinite; }
-.hmove:hover { animation-play-state: paused; }
+.hmove { animation: tickerh linear 45s infinite; }
+.hmove:hover { animation-play-state: running; }

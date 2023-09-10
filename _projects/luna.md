@@ -7,6 +7,7 @@ smallnote: done during fall 2022, written on jan 21, 2023
 desc: i built 1/? of an app out with the help of papa johns pizza
 lang: react native
 index: 1
+categories: [app-dev, react-native]
 ---
 
 hello

@@ -3,87 +3,49 @@ layout: default
 title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
 ---
 
-<div class="navbar" id="nav">
-      
-    <nav> <ul> 
-    <div class = "restofbar">
-    <li><a href="/projects">PROJECTS</a></li>
-      <li><a href="/art">ART</a></li>
-    <li><a href="/about" class = "active">ABOUT</a></li>
-    </div>
-          
-    <div class = "homebutton">
-    <li><a href="/" class = "homebutton"> ←/HOME/PROJECTS<br></a></li>
-    </div>
-   
-    </ul></nav>
-</div>
+
 
 <body>
-<div class="noise">
-<h1 id="titleproj">Some<br>projects!</h1>
-<br><br><br><br>
-<h1 id="title2"> (software or just <br> anything that's not <br> pure design/art) <br><br><sub> maybe click on a folder for a fun surprise! (՞ . .՞) </sub> </h1>
-<br><br>
+       <h1 style="margin-left: 30px; margin-top:40px;">projects i have worked on</h1>
+       <div class = "divider"></div>
 
+       <div style="margin-left: 30px;" id="category-buttons">
+              <button data-category="all" class="buttonTab">all</button>
+              {% assign unique_categories = "" | split: "," %}
+              {% for post in site.projects %}
+                {% for category in post.categories %}
+                  {% unless unique_categories contains category %}
+                    {% assign unique_categories = unique_categories | push: category %}
+                  {% endunless %}
+                {% endfor %}
+              {% endfor %}
+              {% for category in unique_categories %}
+                <button class="buttonTab" data-category="{{ category | slugify }}">{{ category }}</button>
+              {% endfor %}
+            </div>
+            
 
 
 {% assign sorted_work = site.projects| sort: 'index' | reverse %}
-<div class="projectfolderwrapper">
-    {% for work in sorted_work %}
+<div style="margin-left: 30px;" class=" ">
+       {% for work in sorted_work %}
+              <div class="folder" data-categories="{{ work.categories | join: ' ' }}">
+              <a href="{{ work.url }}"> <img src="{{ work.post_cover }}" alt="icon broken :/" /></a>  
+              <div class="atitle">{{ work.title }}</div>
+              <div class="atitle" style="color: #2A69C8; font-size: 10px;">  {% for category in work.categories %}
+                <span class="category">{{ category }};</span>
+              {% endfor %}</div>
+              </div>
+       {% endfor %}
+    <!-- {% for work in sorted_work %}
          <div class="folder">
             <a href="{{ work.url }}"> <img src="{{ work.post_cover }}" alt="icon broken :(" /></a>  
             <div class="atitle"> {{ work.title }}</div>
           </div>
-    {% endfor %}
-<!-- end here -->
-
-      <!-- <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc">automated messaging at 5:20 everyday</div>
-<div class = "lang">python, twilio</div>
-<span class="ftitle"> love bot </span>
-       </div> -->
-       <!-- <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc"><p>breaking the world, one fart at a time<br><br>superswagmaster, html, rust</p></div>
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-        
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc">all the other stuff wowee so fun!<br><br>python, c++, golang, swagmoney</div>
-<span class="ftitle"> 01 </span>
-       </div> -->
-
-</div>
-
+    {% endfor %} -->
 </div>
 
 
+<script src="{{ 'js/filter.js' | relative_url }}"></script>
 
 </body>

@@ -7,6 +7,7 @@ smallnote: aug 2020
 desc: study timer app with a buddy
 lang: swift
 index: 0
+categories: [app-dev, swift]
 ---
 
 So I made an app in two weeks during October of 2019 because I found a random competition and I was bored. Armed with knowledge from two whole elective computer science classes, I decided why not.

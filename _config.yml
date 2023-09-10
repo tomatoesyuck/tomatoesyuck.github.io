@@ -1,7 +1,7 @@
 name: tomatoesyuck
 markdown: kramdown
 
-collections: 
+collections:
   projects:
     output: true
   art:

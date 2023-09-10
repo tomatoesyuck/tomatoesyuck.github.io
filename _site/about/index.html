@@ -5,131 +5,41 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<!-- <script src="https://unpkg.com/typewriter-effect@2.4.0/dist/core.js"></script>
-
-<script>
-  
-  var textArray = [
-  "Andrea speaks 2(?) languages",
-  "Andrea likes to hate on tomatoes",
-  "Andrea enjoys sunsets",
-  "Andrea loves candy corn",
-  "Andrea lives in oversized hoodies",
-  "Andrea uses her Notes app a little too frequently",
-  "Andrea can walk on her hands",
-  "Andrea jams to K-rap music",
-  "Andrea loves swingsets",
-  "Andrea is an introvert with *LOUD*  volume",
-  "Andrea loves taking personality tests",
-  "Andrea thinks you should contact her",
-  "Andrea loves eating spicy food, especially Shin ramen",
-  "Andrea dances for fun",
-  "Andrea is a Red Velvet (flavor and band) enjoyer",
-  "Andrea enjoys dressing up",
-  "Andrea loves her Sony headphones so much",
-  "Andrea thinks you should give her a job",
-  "Andrea says: hello! ˙ᵕ˙",
-  "Andrea uses emoticons so so so much",
-  "Andrea enjoys mid-day naps",
-  "৻(  •̀ ᗜ •́  ৻)",
-  "Andrea is a loud INFP",
-  "Andrea likes tomato soup, ketchup, and marinara",
-  "Andrea wants the Starry Night Lego set",
-  "Andrea loves Studio Ghibli",
-  "Andrea wants to visit Colmar, France",
-  "Andrea changes styles often",
-  "Andrea forgot which way her knee was supposed to go, twice",
-  "Andrea doodles a lot on her notes",
-  "Andrea is always learning something new",
-  "Andrea develops silly apps"
-  ];
-
-  var app = document.getElementById('typewriter');
-
-  var typewriter = new Typewriter(app, {
-      wrapperClassName: 'typespeed',
-      delay: 60,
-      loop: true
-  });
-
-
-
-  var numArray = [];
-  numberOfElems = 0;
-
-  while (numArray.length < 10) {
-    var generatedNum = Math.floor(Math.random() * (textArray.length-1));
-    if (!numArray.includes(generatedNum)) {
-      numArray.push(generatedNum);
-    }
-  }
-
-  var generatedNum = Math.floor(Math.random() * (textArray.length-1)) + 1;
-
-  typewriter.typeString(textArray[numArray[0]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[1]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString("Andrea hates tomatoes")
-    .pauseFor(1500)
-    .typeString('<span style="font-size:13px;"> (and celery, peas, carrots, bittermelon, bokchoy, etc. but nevermind that)</span>')
-    .deleteAll(15)
-    .typeString(textArray[numArray[2]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[3]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[4]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[5]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[6]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[7]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[8]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .typeString(textArray[numArray[9]])
-    .pauseFor(1500)
-    .deleteAll(15)
-    .start();
-  
-</script>
- -->
-			<!-- <script type="module" src="https://unpkg.com/typewriter-effect@2.4.0/dist/core.js"></script> -->
-			<script type="module" src="/js/typewriter.js"></script>
-<!-- 			<link rel="shortcut icon" href="/assets/miscimages/favicon.svg"> -->
+			<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=DotGothic16">
+  <!-- <script type="module" src="/js/typewriter.js"></script> -->
 		</head>
 		<body>
-			<div class="container">
-			
-			<!-- <head><script type="module" src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script></head> -->
-<div class="navbar" id="nav">
-      
-      <nav> <ul> 
-      <div class = "restofbar">
-      <li><a href="/projects">PROJECTS</a></li>
-	    <li><a href="/art">ART</a></li>
-      <li><a href="/about" class = "active">ABOUT</a></li>
-      </div>
-            
-      <div class = "homebutton">
-      <li><a href="/" class = "homebutton"> ←/HOME/ABOUT<br></a></li>
-      </div>
-     
-      </ul></nav>
-</div>
+			<div class="noise">
+			<div class ="topBar">
+					<div class = "nameBar">
+						<a style="text-decoration: none;" href="/"><p style="color: white; margin-left: 10px;" >tomatoesyuck</p></a>
+						<div style="margin-left: auto; margin-right: 10px;">
+							<a href="/dump" style="text-decoration: none;"><button >🗑️</button></a>
+							<button>💾</button>
+							<a href="/"><button style="background-color: red;"><span style="color: white; font-weight: 600;">X</span></button></a>
+						</div>
+					</div>
+				<div class = "navbar">
+					<div class = "navbarTopRow">
+						<a href="/about"><button class = "navbarButtons" style = "text-align: left;"> <span style="text-decoration: underline;">A</span>bout View</button></a>
+						<a href="/projects"><button class = "navbarButtons">📁  <span style="text-decoration: underline;">P</span>rojects | cool stuff </button></a>
+						<a href="/xp"><button class = "navbarButtons" style="text-align: right;"> ᯤ  <span style="text-decoration: underline;">X</span>P Collected</button></a>
+					</div>
+					<div class = "navbarBottomRow">
+						<button class = "navbarButtons" style = "color: gray; border-right: 0px;"> <span style="text-decoration: underline;">R</span>emember This URL</button>
+						<button class = "navbarButtons" style="background-color: white; color: black; border-left: 0px; text-align: left; padding-left: 20px;" > http://localhost:4000 </button>
+					</div>
+					
 
-<body>
-<div class="noise">
+					<!-- <div style="width: 100%; border: 1px #A8A8A8 solid"></div> -->
+	
+				</div>
+			</div>
+			
+			
+			<body>
+
   
 <div class = "profile">
 
@@ -152,7 +62,7 @@
 "Andrea can walk on her hands",
 "Andrea jams to K-rap music",
 "Andrea loves swingsets",
-"Andrea is an introvert with *LOUD*  volume",
+"Andrea is an introvert with *LOUD* volume",
 "Andrea loves taking personality tests",
 "Andrea thinks you should contact her",
 "Andrea loves eating spicy food, especially Shin ramen",
@@ -162,7 +72,7 @@
 "Andrea loves her Sony headphones so much",
 "Andrea thinks you should give her a job",
 "Andrea says: hello! ˙ᵕ˙",
-"Andrea uses emoticons so so so much",
+"Andrea uses emoticons a lot.",
 "Andrea enjoys mid-day naps",
 "৻(  •̀ ᗜ •́  ৻)",
 "Andrea is a loud INFP",
@@ -171,10 +81,11 @@
 "Andrea loves Studio Ghibli",
 "Andrea wants to visit Colmar, France",
 "Andrea changes styles often",
-"Andrea forgot which way her knee was supposed to go, twice",
+"Andrea forgot which way her knee was supposed to bend, twice",
 "Andrea doodles a lot on her notes",
 "Andrea is always learning something new",
-"Andrea develops silly apps"
+"Andrea develops silly apps in her free time",
+"Andrea doesn't like boring"
 ];
 var typewriter = new window.Typewriter(document.getElementById('typewriter'), {
     wrapperClassName: 'typespeed',
@@ -187,7 +98,7 @@ var typewriter = new window.Typewriter(document.getElementById('typewriter'), {
 var numArray = [];
 numberOfElems = 0;
 
-while (numArray.length < 10) {
+while (numArray.length < 12) {
 	var generatedNum = Math.floor(Math.random() * (textArray.length-1));
   if (!numArray.includes(generatedNum)) {
   	numArray.push(generatedNum);
@@ -239,7 +150,43 @@ typewriter.typeString(textArray[numArray[0]])
 
 
 
+<div class = "profileBackground">
+<div class = "profileLeft">
+  <div class = "profileLeftTXT">
+    <p>andrea</p>
+    <div style="  background-color: #70B07C; width: 9px; height: 9px; border-radius: 50%; margin-left: 15px; margin-right: 15px; margin-top: 3px;"></div>
+    <p><span style="color: #8FA6E3; font-weight: 200; font-size: 14px; text-decoration: underline;">seeking swe roles</span></p>
+  </div>
+  <img style = "width: 230px; " src="/assets/icons/photo_me.png">
+</div>
 
+<div class = "profileRight">
+  <div style = "border: 1px #A8A8A8 solid; background-color: #D9D9D9; width: 90%; padding-left: 10px; padding-right: 10px;"> 
+    <p style="text-align: left; font-weight: 600; font-size: 20px;">my elevator pitch, sorta, i guess</p>
+  </div>
+  <div style = "border: 1px #A8A8A8 solid; background-color: #EBEBEB; width: 90%; text-align: left; padding-left: 10px; padding-right: 10px;"> 
+    <p >i like making things that are helpful, cool or fun (aka not boring.) <br><br>
+
+      don’t really care abt the specific tech stacks; all have their pros and cons for different applications. if i don’t know it (happens a lot), i’ll learn it (fast). <br>
+      
+      cs person at NYU right now<br><br>
+      
+      also app dev person<br>
+      also people’s person</p>
+  </div>
+</div>
+
+</div>
+
+<div class = "contact">
+  <div class="hwrap"><div class="hmove">
+    <a href="mailto:andrea.zhou@nyu.edu"><div class="hitem">contact me!</div></a>
+    <div class="hitem">(it's a good idea)</div>
+    <a href="mailto:andrea.zhou@nyu.edu"><div class="hitem">andrea.zhou@nyu.edu</div></a>
+    <div class="hitem">not forcing you but you should c;</div>
+    <div class="hitem">not to toot my own horn (i am), i'm pretty cool</div>
+  </div></div>
+</div>
 
 
 
@@ -258,19 +205,13 @@ i like making things that seem cool or fun (or cute, i like cute things too beca
 <br><br>
 cs person at NYU right now <br>also app person <br>also human person
 </p>
+
+
+
+
 </div>
 
 
-
-</div>
-
-<div class = "contact">
-  <div class="hwrap"><div class="hmove">
-    <div class="hitem">contact me</div>
-    <div class="hitem">(it's a good idea)</div>
-    <div class="hitem">not forcing you but you should</div>
-  </div></div>
-</div>
 
 
 </div>
@@ -278,7 +219,33 @@ cs person at NYU right now <br>also app person <br>also human person
 </body>
 
 			
-			</div><!-- /.container -->
-	
+			</div>
+
+			<script>
+				var buttons = document.querySelectorAll("#category-buttons button");
+				var posts = document.querySelectorAll(".blog-post");
+			
+				buttons.forEach(function (button) {
+				  button.addEventListener("click", function () {
+					var category = this.getAttribute("data-category");
+			
+					posts.forEach(function (post) {
+					  if (category === "all" || post.getAttribute("data-categories").includes(category)) {
+						post.classList.remove("hidden");
+					  } else {
+						post.classList.add("hidden");
+					  }
+					});
+			
+					buttons.forEach(function (btn) {
+					  btn.classList.remove("active");
+					});
+			
+					this.classList.add("active");
+				  });
+				});
+			  </script>
 		</body>
 	</html>
+
+	

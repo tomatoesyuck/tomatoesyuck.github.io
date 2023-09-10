@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -6,39 +5,82 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-<!-- 			<link rel="shortcut icon" href="/assets/miscimages/favicon.svg"> -->
+			<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=DotGothic16">
+  <!-- <script type="module" src="/js/typewriter.js"></script> -->
 		</head>
 		<body>
-			<div class="container">
+			<div class="noise">
+			<div class ="topBar">
+					<div class = "nameBar">
+						<a style="text-decoration: none;" href="/"><p style="color: white; margin-left: 10px;" >tomatoesyuck</p></a>
+						<div style="margin-left: auto; margin-right: 10px;">
+							<a href="/dump" style="text-decoration: none;"><button >🗑️</button></a>
+							<button>💾</button>
+							<a href="/"><button style="background-color: red;"><span style="color: white; font-weight: 600;">X</span></button></a>
+						</div>
+					</div>
+				<div class = "navbar">
+					<div class = "navbarTopRow">
+						<a href="/about"><button class = "navbarButtons" style = "text-align: left;"> <span style="text-decoration: underline;">A</span>bout View</button></a>
+						<a href="/projects"><button class = "navbarButtons">📁  <span style="text-decoration: underline;">P</span>rojects | cool stuff </button></a>
+						<a href="/xp"><button class = "navbarButtons" style="text-align: right;"> ᯤ  <span style="text-decoration: underline;">X</span>P Collected</button></a>
+					</div>
+					<div class = "navbarBottomRow">
+						<button class = "navbarButtons" style = "color: gray; border-right: 0px;"> <span style="text-decoration: underline;">R</span>emember This URL</button>
+						<button class = "navbarButtons" style="background-color: white; color: black; border-left: 0px; text-align: left; padding-left: 20px;" > http://localhost:4000 </button>
+					</div>
+					
+
+					<!-- <div style="width: 100%; border: 1px #A8A8A8 solid"></div> -->
+	
+				</div>
+			</div>
 			
-			<div class="navbar" id="nav">
-      
-    <nav> <ul> 
-    <div class = "restofbar">
-    <li><a href="/projects">PROJECTS</a></li>
-      <li><a href="/art">ART</a></li>
-    <li><a href="/about" class = "active">ABOUT</a></li>
-    </div>
-          
-    <div class = "homebutton">
-    <li><a href="/" class = "homebutton"> ←/HOME/PROJECTS<br></a></li>
-    </div>
-   
-    </ul></nav>
-</div>
+			
+			<body>
+       <h1 style="margin-left: 30px; margin-top:40px;">projects i have worked on</h1>
+       <div class = "divider"></div>
 
-<body>
-<div class="noise">
-<h1 id="titleproj">Some<br>projects!</h1>
-<br><br><br><br>
-<h1 id="title2"> (software or just <br> anything that's not <br> pure design/art) <br><br><sub> maybe click on a folder for a fun surprise! (՞ . .՞) </sub> </h1>
-<br><br>
+       <div style="margin-left: 30px;" id="category-buttons">
+              <button data-category="all" class="buttonTab">all</button>
+              
+              
+              
+                <button class="buttonTab" data-category="app-dev">app-dev</button>
+              
+                <button class="buttonTab" data-category="react-native">react-native</button>
+              
+                <button class="buttonTab" data-category="swift">swift</button>
+              
+            </div>
+            
 
 
 
-
-<div class="projectfolderwrapper">
-    
+<div style="margin-left: 30px;" class=" ">
+       
+              <div class="folder" data-categories="app-dev react-native">
+              <a href="/projects/luna.html"> <img src="/assets/projectblogassets/lunaassets/lunacover.png" alt="icon broken :/" /></a>  
+              <div class="atitle">luna</div>
+              <div class="atitle" style="color: #2A69C8; font-size: 10px;">  
+                <span class="category">app-dev;</span>
+              
+                <span class="category">react-native;</span>
+              </div>
+              </div>
+       
+              <div class="folder" data-categories="app-dev swift">
+              <a href="/projects/studdy.html"> <img src="/assets/projectcovers/baldy-studdy.png" alt="icon broken :/" /></a>  
+              <div class="atitle">studdy</div>
+              <div class="atitle" style="color: #2A69C8; font-size: 10px;">  
+                <span class="category">app-dev;</span>
+              
+                <span class="category">swift;</span>
+              </div>
+              </div>
+       
+    <!-- 
          <div class="folder">
             <a href="/projects/luna.html"> <img src="/assets/projectblogassets/lunaassets/lunacover.png" alt="icon broken :(" /></a>  
             <div class="atitle"> luna</div>
@@ -48,60 +90,41 @@
             <a href="/projects/studdy.html"> <img src="/assets/projectcovers/baldy-studdy.png" alt="icon broken :(" /></a>  
             <div class="atitle"> studdy</div>
           </div>
-    
-<!-- end here -->
-
-      <!-- <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc">automated messaging at 5:20 everyday</div>
-<div class = "lang">python, twilio</div>
-<span class="ftitle"> love bot </span>
-       </div> -->
-       <!-- <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc"><p>breaking the world, one fart at a time<br><br>superswagmaster, html, rust</p></div>
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-        
-<img src="https://64.media.tumblr.com/be6d7a6e74ebb6e931a365121ce65995/53c3b8b3a2b45327-6f/s540x810/e970710342b6cb4a6c5bf3193b2f4480d8c395aa.png" alt="koolfolder" />
-<span class="ftitle"> 01 </span>
-       </div>
-       <div class="folder">
-<img src="/assets/icons/projectfoldericon.svg" alt="koolfolder" />
-<div class = "desc">all the other stuff wowee so fun!<br><br>python, c++, golang, swagmoney</div>
-<span class="ftitle"> 01 </span>
-       </div> -->
-
-</div>
-
+     -->
 </div>
 
 
+<script src="/js/filter.js"></script>
 
 </body>
 			
-			</div><!-- /.container -->
-	
+			</div>
+
+			<script>
+				var buttons = document.querySelectorAll("#category-buttons button");
+				var posts = document.querySelectorAll(".blog-post");
+			
+				buttons.forEach(function (button) {
+				  button.addEventListener("click", function () {
+					var category = this.getAttribute("data-category");
+			
+					posts.forEach(function (post) {
+					  if (category === "all" || post.getAttribute("data-categories").includes(category)) {
+						post.classList.remove("hidden");
+					  } else {
+						post.classList.add("hidden");
+					  }
+					});
+			
+					buttons.forEach(function (btn) {
+					  btn.classList.remove("active");
+					});
+			
+					this.classList.add("active");
+				  });
+				});
+			  </script>
 		</body>
 	</html>
+
+	

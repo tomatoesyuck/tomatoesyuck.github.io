@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Blog</h1>
+
+<div id="category-buttons">
+  <button data-category="all">All</button>
+  <button data-category="category1">Category 1</button>
+  <button data-category="category2">Category 2</button>
+  <!-- Add more buttons for each category -->
+</div>
+
+<div id="blog-posts">
+  {% for post in site.posts %}
+    <div class="blog-post" data-categories="{{ post.categories | join: ' ' }}">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}">Read more</a>
+    </div>
+  {% endfor %}
+</div>
