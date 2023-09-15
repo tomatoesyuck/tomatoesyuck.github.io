@@ -56,7 +56,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   height: 40px;
-
+  color: black;
 }
 
 .navbarTopRow .navbarButtons:hover{
@@ -446,7 +446,6 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: .85;
 }
 
 .blogpage_header h2 {
@@ -706,6 +705,26 @@ code {
   padding: 30px;
   place-items: center;
 }
+
+@media screen and (max-width: 700px) {
+  .profileBackground {
+    background-color: #EBEBEB; /* Gray color */
+    border-radius: 10px; 
+    width: 80%;  
+    height: auto; 
+    margin: 0 auto; 
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    place-items: center;
+  }
+  .profileRight {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+} 
+ 
 
 .profileLeft {
   flex: 1;
