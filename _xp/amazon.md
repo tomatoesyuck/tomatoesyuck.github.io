@@ -7,13 +7,31 @@ desc: basically got to nuke ~50% lines of code needed for a major feature in the
 index: 1
 ---
 
-so what did i do at amazon? <br>
+<h2>so what did i do at amazon?</h2>
 
-- refactored code for Kindle's iOS In-book top chrome and overflow <small> ( shown below just in case you're not familiar with kindle )</small>
+✧ refactored code for Kindle's iOS In-book top chrome and overflow (shown on the bottom of page just in case you dont know what that is)<br>
 
-- new implementation only needed about half as many lines of code as original implementation
-- allowed for live updating of the buttons
-- localized my buttons (accessibility is good)
-- wrote design docs
+✧ new implementation only needed about half as many lines of code as original implementation <br>
 
-- sat in on sprint meetings
+✧ allowed for live updating of the buttons aka you can delete and add buttons without needing to recompile (saves lots of time!! we like that)<br>
+
+✧ localized my buttons so they are in the user's region's default language (accessibility epic)<br>
+
+✧ wrote design docs<br>
+
+✧ pushed code through ci/cd pipeline<br>
+
+✧ dealt with some pretty ugly rebases<br>
+
+✧ #teamworked with other interns which caused aforementioned ugly rebases<br>
+
+✧ set up A/B testing for beta and release<br>
+
+✧ sat in on sprint meetings<br>
+
+<br>
+![appopen](/assets/projectblogassets/amazonassets/topchrome.png){:class = "blogpage"}
+top chrome
+<br><br>
+![appopen](/assets/projectblogassets/amazonassets/overflow.png){:class = "blogpage"}
+overflow

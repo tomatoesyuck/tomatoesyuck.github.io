@@ -957,7 +957,7 @@ code {
 
 .expListItem h2 {
   text-decoration: none;
-  line-height: .5;
+  /* line-height: .5; */
 }
 
 .expListItem p {
@@ -965,7 +965,7 @@ code {
 }
 
 .expListItem h3 {
-  line-height: .5;
+  /* line-height: .5; */
   color: #2A69C8;
   font-weight: 400;
   font-size: 15px;
