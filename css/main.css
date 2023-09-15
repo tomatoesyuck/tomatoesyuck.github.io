@@ -706,7 +706,7 @@ code {
   place-items: center;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .profileBackground {
     background-color: #EBEBEB; /* Gray color */
     border-radius: 10px; 
