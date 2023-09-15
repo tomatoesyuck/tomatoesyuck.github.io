@@ -1,13 +1,17 @@
 ---
 layout: default
-title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
+title: what a nerd!
 ---
 
 
 
 <body>
+
+
        <h1 style="margin-left: 30px; margin-top:40px;">projects i have worked on</h1>
        <div class = "divider"></div>
+
+    <div style="display: grid;  grid-template-columns: 4fr 1fr;">
 
        <div style="margin-left: 30px;" id="category-buttons">
               <button data-category="all" class="buttonTab">all</button>
@@ -22,12 +26,24 @@ title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
               {% for category in unique_categories %}
                 <button class="buttonTab" data-category="{{ category | slugify }}">{{ category }}</button>
               {% endfor %}
-            </div>
+        </div>
             
+    <div style = "margin-top: 20px;">
+      <div style = "border: 1px #848484 solid; background-color: #abaaaa; width: 180px; padding-left: 10px; padding-right: 10px; margin-left: 5px; margin-right: 5px;"> 
+        <p style="text-align: left; font-weight: 600; font-size: 15px;"> ❗psssst... </p>
+      </div>
 
+      <div style = "border: 1px #848484 solid; width: 180px; text-align: left; padding-left: 10px; padding-right: 10px; background-color: #CFCFCF; margin-left: 5px; margin-right: 5px;"> 
+        <p style="font-size: 13px;">i wonder if the icons do anything..?<br><br></p>
+      </div>
+      <img style = "width: 80px; position: relative; top: -20px; right: -110px; margin-bottom: -20px;" src="/assets/icons/psst.jpg">
+      
+  </div>
+
+</div>
 
 {% assign sorted_work = site.projects| sort: 'index' | reverse %}
-<div style="margin-left: 30px;" class=" ">
+<div style="margin-left: 30px;">
        {% for work in sorted_work %}
               <div class="folder" data-categories="{{ work.categories | join: ' ' }}">
               <a href="{{ work.url }}"> <img src="{{ work.post_cover }}" alt="icon broken :/" /></a>  
@@ -37,12 +53,6 @@ title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
               {% endfor %}</div>
               </div>
        {% endfor %}
-    <!-- {% for work in sorted_work %}
-         <div class="folder">
-            <a href="{{ work.url }}"> <img src="{{ work.post_cover }}" alt="icon broken :(" /></a>  
-            <div class="atitle"> {{ work.title }}</div>
-          </div>
-    {% endfor %} -->
 </div>
 
 

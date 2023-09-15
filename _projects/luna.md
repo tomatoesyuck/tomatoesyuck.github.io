@@ -3,7 +3,7 @@ layout: projectpgblog
 title: luna
 post_cover: /assets/projectblogassets/lunaassets/lunacover.png
 titleaddon: a fun little side quest of sorts
-smallnote: done during fall 2022, written on jan 21, 2023
+smallnote: done during fall 2022
 desc: i built 1/? of an app out with the help of papa johns pizza
 lang: react native
 index: 1
@@ -23,6 +23,6 @@ but i built (and designed-ish) app interface
 ![appopen](/assets/projectblogassets/lunaassets/luna_2.gif){:class = "blogpage"}
 
 yay
-look at that ~~<small> why it is in slow mo, i do not know</small>~~
+look at that
 
-i ate papa johns pizza while making that
+i ate papa johns pizza at like 3am while making that

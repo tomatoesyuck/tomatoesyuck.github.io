@@ -1,9 +1,39 @@
 ---
 layout: default
-title: fun nerd stuff ꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱⸒⸒
+title: work xp
 ---
 
 <body>
     <h1 style="margin-left: 30px; margin-top:40px;">experience</h1>
     <div class = "divider"></div>
+
+    {% assign sorted_xp = site.xp| sort: 'index' | reverse %}
+    <div style = "margin-left: 60px; margin-right: 60px; margin-top: 25px;">
+
+        {% for item in sorted_xp %}
+        
+        <a style = "text-decoration: none; color: inherit;" href="{{ item.url }}">
+        <div class = "expListItem">
+        
+            <div class = "expListItemLeft">
+                <img src="{{ item.post_cover }}" alt="icon broken :/">
+            </div>
+
+            <div class = "expListItemRight">
+                <h2>{{ item.title }}</h2>
+                <h3>{{ item.when }}</h3>
+                <br><br>
+                <p>{{ item.desc }}</p>
+                <p>[...click to read more]</p>
+            </div>
+      
+        </div>
+        </a>
+      
+        {% endfor %}
+
+    </div>
+
+
+
 </body>

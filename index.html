@@ -1,16 +1,170 @@
 ---
 layout: default
-title: home 𓌉◯𓇋
+title: about andrea •̀ ᵕ •́
 ---
 
 <body>
 
-<div class = "welcomeCont">
+  
+<div class = "profile">
 
-            <a href="/about" class = "myname" >andrea</a>
-      <div class = "welcomeGrid">
-            <img class="welcomeGridElem" src="assets/icons/squimshmain.gif">
-            <h1 class="welcomeGridElem" style="letter-spacing:.1cm; font-size: 90px; margin-left: 20px;"> welcome to  <br> <i>my</i>portfolio</h1>
-      </div>
+      
+<div id="changeText"></div>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" type="module"></script>
+<div class = "typewriter_wrapper"></div>
+<div class="typewriterText"><div id="typewriter"></div></div>
+<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+
+
+
+<script>
+      window.addEventListener('DOMContentLoaded', () => {document.getElementById('typewriter')});
+      var textArray = [
+"Andrea speaks 2(?) languages",
+"Andrea likes to hate on tomatoes",
+"Andrea enjoys sunsets",
+"Andrea loves candy corn",
+"Andrea lives in oversized hoodies",
+"Andrea uses her Notes app a little too frequently",
+"Andrea can walk on her hands",
+"Andrea jams to K-rap music",
+"Andrea loves swingsets",
+"Andrea is an introvert with *LOUD* volume",
+"Andrea loves taking personality tests",
+"Andrea thinks you should contact her",
+"Andrea loves eating spicy food, especially Shin ramen",
+"Andrea dances for fun",
+"Andrea is a Red Velvet (flavor and band) enjoyer",
+"Andrea enjoys dressing up",
+"Andrea loves her Sony headphones so much",
+"Andrea thinks you should give her a job",
+"Andrea thinks you should work with her",
+"Andrea says: hello! ˙ᵕ˙",
+"Andrea uses emoticons a lot.",
+"Andrea enjoys mid-day naps",
+"Andrea is a loud INFP",
+"Andrea likes tomato soup, ketchup, and marinara",
+"Andrea wants the Starry Night Lego set",
+"Andrea loves Studio Ghibli",
+"Andrea wants to visit Colmar, France",
+"Andrea changes styles often",
+"Andrea forgot which way her knee was supposed to bend, twice",
+"Andrea doodles a lot on her notes",
+"Andrea is always learning something new",
+"Andrea develops silly apps in her free time",
+"Andrea doesn't like boring"
+];
+var typewriter = new window.Typewriter(document.getElementById('typewriter'), {
+    wrapperClassName: 'typespeed',
+    delay: 60,
+    loop: true
+});
+
+
+
+var numArray = [];
+numberOfElems = 0;
+
+while (numArray.length < 12) {
+	var generatedNum = Math.floor(Math.random() * (textArray.length-1));
+  if (!numArray.includes(generatedNum)) {
+  	numArray.push(generatedNum);
+  }
+}
+
+var generatedNum = Math.floor(Math.random() * (textArray.length-1)) + 1;
+
+
+
+typewriter.typeString(textArray[numArray[0]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[1]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString("Andrea hates tomatoes")
+  .pauseFor(1500)
+  .typeString('<span style="font-size:13px;"> (and celery, peas, carrots, bittermelon, bokchoy, etc. but nevermind that)</span>')
+  .deleteAll(15)
+  .typeString(textArray[numArray[2]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[3]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[4]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[5]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[6]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[7]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[8]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .typeString(textArray[numArray[9]])
+  .pauseFor(1500)
+  .deleteAll(15)
+  .start();
+  
+
+</script>
+
+
+
+<div class = "profileBackground">
+<div class = "profileLeft">
+  <div class = "profileLeftTXT">
+    <p>andrea</p>
+    <div style="  background-color: #70B07C; width: 9px; height: 9px; border-radius: 50%; margin-left: 15px; margin-right: 15px; margin-top: 3px;"></div>
+    <p><span style="color: #8FA6E3; font-weight: 200; font-size: 14px; text-decoration: underline;">seeking swe roles</span></p>
+  </div>
+  <img style = "width: 230px; " src="/assets/icons/photo_me.png">
 </div>
+
+<div class = "profileRight">
+  <div style = "border: 1px #A8A8A8 solid; background-color: #D9D9D9; width: 100%; padding-left: 10px; padding-right: 10px;"> 
+    <p style="text-align: left; font-weight: 600; font-size: 20px;">my elevator pitch, i guess</p>
+  </div>
+  <div style = "border: 1px #A8A8A8 solid; background-color: #EBEBEB; width: 100%; text-align: left; padding-left: 10px; padding-right: 10px;"> 
+    <p>i like making things that are helpful, cool or fun. <br><br>
+      
+      <i>enjoyer</i> of design, art, emotion, making lives just a tad bit better <br><br>
+
+      pretty proficient at: <br>
+      chugging free coffee, asking questions, googling, typing away, and getting sh** done. <br><br>
+
+      cs senior at <span style="color: purple; font-weight: 700;">NYU</span> right now<br><br>
+      
+      also <i><span style = "color: #576BA2; font-weight: 600;">app dev</span></i> person<br>
+      also people's person<br></p>
+  </div>
+</div>
+
+</div>
+
+<div class = "contact">
+  <div class="hwrap"><div class="hmove">
+    <a href="mailto:andrea.zhou@nyu.edu"><div class="hitem">contact me!</div></a>
+    <div class="hitem">(it's a good idea)</div>
+    <a href="mailto:andrea.zhou@nyu.edu"><div class="hitem">andrea.zhou@nyu.edu</div></a>
+    <div class="hitem">not forcing you but you should c;</div>
+    <div class="hitem">not to toot my own horn (i am), i'm pretty cool</div>
+  </div></div>
+</div>
+
+
+<div style = "text-align: left; margin-left: 20px; margin-bottom: 20px;margin-top: 20px; font-size: 20px; ">
+<a style= "text-decoration: none;" href="mailto: andrea.zhou@nyu.edu"><p>📩 Drop an email!</p></a>
+<a target="_blank"  rel="noopener noreferrer" style= "text-decoration: none;" href="https://drive.google.com/file/d/1Pkf92FERe14EGHDfEgPesYGe626iXamj/view?usp=sharing"><p>🔗 Professional List of Things I've Done aka My Resume</p></a>
+</div>
+<br><br>
+</div>
+
 </body>

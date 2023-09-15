@@ -6,3 +6,5 @@ collections:
     output: true
   art:
     output: true
+  xp:
+    output: true
